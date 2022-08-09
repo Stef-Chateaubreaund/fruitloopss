@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+#fruit_table {
+  border: 30px solid pink;
+  border-radius: 20px;
+  
+}
+th, td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+container{
+  padding: 8px;
+  text-align: center;
+  
+	
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th{
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: red}
+
+th {
+  background-color: pink;
+  color: white;
+}
+h2{
+	color: pink;
+	-webkit-text-stroke: 0.3vw red;
+	font-size: 5vw;
+	font-family: tahoma;
+	
+}
+h2::before{
+	content: attr(data-text);
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	color: pink;
+	-webkit-text-stroke: 0vw red;
+	border-right: 1px solid red;
+	overflow: hidden;
+	animation: animate 6s linear infinite;
+	
+}
+
+@keyframes animate
+{
+	0%,10%,100%
+	{
+		width:0;
+	}
+	70%,90%
+	{
+	width: 100%;
+	}
+}
+
+
+
+
+
